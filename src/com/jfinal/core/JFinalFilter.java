@@ -62,7 +62,6 @@ public final class JFinalFilter implements Filter {
 		HttpServletRequest request = (HttpServletRequest)req;
 		HttpServletResponse response = (HttpServletResponse)res;
 		request.setCharacterEncoding(encoding);
-		
 		String target = request.getRequestURI();
 		if (contextPathLength != 0)
 			target = target.substring(contextPathLength);
